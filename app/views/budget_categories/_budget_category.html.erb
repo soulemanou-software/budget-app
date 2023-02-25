@@ -1,0 +1,12 @@
+<div id="<%= dom_id budget_category %>" class="category">
+  <div>
+    <%= image_tag budget_category.icon %>
+    <p>
+      <%= link_to budget_category.name, budget_category_expenses_path(budget_category) %>
+    </p>
+  </div>
+  <p class="total">
+    $<%= budget_category.total%>
+  </p>
+
+</div>
