@@ -1,17 +1,3 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
-
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
 <a name="readme-top"></a>
 
 <!--
@@ -36,6 +22,14 @@ REQUIRED SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
+<div align="center">
+
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Budget app</b></h3>
+
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -63,11 +57,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Budget app] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-**[your_project__name]** is a...
+**[Budget app]** is a mobile web application where you can manage your budget.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,13 +73,15 @@ After you're finished please remove all the comments and instructions!
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">HTML</a></li>
+    <li><a href="https://reactjs.org/">CSS</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Server | Backend</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">Ruby on rails</a></li>
   </ul>
 </details>
 
@@ -96,15 +92,24 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
+<details>
+<summary>Images</summary>
+<li>![Screenshot](./image-1.png)</li>
+<li>![Screenshot](./image-2.png)</li>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[See overview of money spent]**
+  - See the money spent on each category.
+- **[Add Transactions and categories]**
+  - Introduce new transactions associated with a category or multiple categories.
+- **[Sign in and sign up]**
+  - User authentication. Such that the data is private to user currently logged in.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +119,8 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Link](https://cashverse-raga.onrender.com/)
+- [Loom video](https://www.loom.com/share/fa994de927394858b0a81204dafdb1c4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,63 +136,46 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
 ```sh
  gem install rails
 ```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd folder
+  git clone https://github.com/itsmraga-hub/budget-app.git
+  cd budget-app
+  Open in your favorite editor
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
+  cd budget-app
   gem install
+  bundle install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   rails server
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+  bin/rspec spec
 ```
---->
 
 ### Deployment
 
@@ -208,17 +197,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **William Raga**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@itsmraga-hub](https://github.com/itsmraga-hub)
+- Twitter: [@RagaMacharia](https://twitter.com/RagaMacharia)
+- LinkedIn: [William Raga](https://linkedin.com/in/itsmraga)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +211,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[List Transactions]**
+- [ ] **[Transaction Details]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -262,6 +244,8 @@ If you like this project...
 
 I would like to thank...
 
+Original design idea by [Gregoire Vella](https://www.behance.net/gregoirevella). All credits to him.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
@@ -270,9 +254,9 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Did you use scaffold to generate your models, views and controllers or did you build them from scratch]**
 
-  - [Answer_1]
+  - [Used a combination of both for different models]
 
 - **[Question_2]**
 
@@ -285,7 +269,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

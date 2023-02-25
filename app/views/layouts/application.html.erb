@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "form", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "main", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/f0e9415ee2.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <% if user_signed_in? %>
+      <header>
+        <p><b><%= current_user.name %></b></p>
+        <div>
+          <%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+        </div>
+      </header>
+    <% end %>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>

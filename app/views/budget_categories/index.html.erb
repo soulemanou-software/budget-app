@@ -1,0 +1,15 @@
+<section class="categories">
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Budget Categories</h1>
+
+  <div id="budget_categories">
+    <% @budget_categories.each do |budget_category| %>
+      <%= render budget_category %>
+    <% end %>
+  </div>
+
+  <div class="new-category">
+    <%= link_to "Add New category", new_budget_category_path %>
+  </div>
+</section>
