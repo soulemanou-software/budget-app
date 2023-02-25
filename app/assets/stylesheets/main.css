@@ -1,0 +1,160 @@
+/* Splash screen styles */
+
+.splash-screen {
+  height: 100vh;
+  width: 100vw;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-screen h1 {
+  justify-self: center;
+  font-size: 2em;
+}
+
+.splash-screen div {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.splash-screen a {
+  margin: auto;
+  width: 90%;
+  padding: 1em;
+  color: black;
+  text-decoration: none;
+}
+
+/* Categories */
+
+.categories {
+  width: 100%;
+}
+
+#budget_categories {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.category {
+  padding: 0.5em;
+  margin: auto;
+  border-radius: 8px;
+  width: 90%;
+  background: #fff;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category div {
+  display: flex;
+  gap: 0.5em;
+}
+
+.new-category a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  border: 1px solid #fff;
+  padding: 0.5em 3em;
+}
+
+.category div a {
+  display: block;
+  padding-top: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.splash-screen a:hover {
+  background: #3778c2;
+  color: #fff;
+}
+
+.category div img {
+  width: 7.5em;
+  border-radius: 4px;
+  max-height: 5em;
+}
+
+.total {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+
+.categories h1 {
+  text-align: center;
+  padding: 1em;
+}
+
+.new-category {
+  position: absolute;
+  bottom: 1em;
+  font-size: 2em;
+  text-align: center;
+  background: #5fb523;
+  padding: 1.5em 1em;
+  width: 100%;
+}
+
+#expenses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.expense {
+  font-size: 2em;
+  margin: auto;
+  background: #fff;
+  width: 90%;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense:nth-child(1) {
+  border-top: 1px solid #bbb;
+}
+
+.expense div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.expense div .date,
+.amount {
+  font-size: 0.8em;
+  opacity: 0.75;
+}
+
+.total-container {
+  margin: auto;
+  padding: 1em;
+  font-size: 1.5em;
+  width: 90%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+#error_explanation h2 {
+  display: none;
+}

@@ -1,0 +1,36 @@
+<section>
+  <p style="color: green"><%= notice %></p>
+
+  <div class="header header-details">
+    <%= link_to budget_categories_path do %>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M109.3 288L480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288z"/></svg>
+    <% end %>
+    <p>DETAILS</p>
+  </div>
+
+  <div class="category">
+    <div>
+      <%= image_tag @budget_category.icon %>
+      <p>
+        <%= link_to @budget_category.name, budget_category_expenses_path(@budget_category) %>
+      </p>
+    </div>
+
+</div>
+
+  <div id="expenses">
+    <% @expenses.each do |expense| %>
+      <%= render expense %>
+    <% end %>
+  </div>
+  <div class="total-container">
+  <p>TOTAL PAYMENT</p>
+  <p class="total">
+      $<%= @budget_category.total%>
+  </p>
+  </div>
+
+  <div class="new-category">
+    <%= link_to "Add New Transaction", new_budget_category_expense_path(@budget_category) %>
+  </div>
+</section>

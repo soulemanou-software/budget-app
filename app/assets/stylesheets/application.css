@@ -1,0 +1,38 @@
+@import url('https://www.cdnfonts.com/proxima-nova-2.font');
+
+/* #3778c2 */
+
+/* #5fb523 */
+
+/* #434b54 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 65%;
+  font-family: 'Proxima Nova', sans-serif;
+  background: rgba(187, 187, 187, 0.5);
+}
+
+header {
+  width: 100%;
+  background: #3778c2;
+  padding: 1em 2em;
+  font-size: 1.75em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background: none;
+  border: none;
+}
