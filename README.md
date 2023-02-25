@@ -197,11 +197,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **William Raga**
+👤 **soulemanou kunchiefuh babanou**
 
-- GitHub: [@itsmraga-hub](https://github.com/itsmraga-hub)
-- Twitter: [@RagaMacharia](https://twitter.com/RagaMacharia)
-- LinkedIn: [William Raga](https://linkedin.com/in/itsmraga)
+- GitHub: [@soulemanou-software](https://github.com/soulemanou-software)
+- Twitter: [@soulemanou kunchiefuh](https://twitter.com/soulemanoubabanou)
+- LinkedIn: [soulemanou kunchiefuh babanou](https://linkedin.com/in/souleamnou kunchiefuh babanou)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
